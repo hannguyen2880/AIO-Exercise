@@ -1,19 +1,19 @@
-def isInteger(n):
+def is_integer(n):
     return n == int(n)
 
 # MAIN PROGRAM
 tp = float(input("Enter tp: "))
-if isInteger(tp) == 0:
+if is_integer(tp) == 0:
     print("tp must be int")
     exit()
 
 fp = float(input("Enter fp: "))
-if isInteger(fp) == 0:
+if is_integer(fp) == 0:
     print("fp must be int")
     exit()
 
 fn = float(input("Enter fn: "))
-if isInteger(fn) == 0:
+if is_integer(fn) == 0:
     print("fn must be int")
     exit()
 
@@ -30,4 +30,3 @@ f1_score = 2 * (precision * recall) / (precision + recall)
 print("Precision is", precision)
 print("Recall is", recall)
 print("F1-Score is", f1_score)
-
