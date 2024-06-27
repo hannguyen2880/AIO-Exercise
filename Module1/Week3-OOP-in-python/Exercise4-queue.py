@@ -8,7 +8,7 @@ class Queue:
 
     def is_full(self):
         return len(self.__queue) == self.__capacity
-    
+
     def enqueue(self, value):
         if self.is_full():
             raise Exception("Overflow")
@@ -18,7 +18,7 @@ class Queue:
         if self.is_empty():
             raise Exception("Underflow")
         return self.__queue.pop(0)
-    
+
     def front(self):
         if self.is_empty():
             print("Queue is empty")
